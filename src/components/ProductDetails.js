@@ -1,6 +1,4 @@
-import { useEffect } from 'react';
 import './components_css/ProductDetails.css'
-import axios from 'axios'
 import { useDispatch } from 'react-redux';
 import { addToCart } from '../RTK/Slices/CartSlice';
 function ProductDetails(props){

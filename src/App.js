@@ -6,7 +6,6 @@ import Landing from "./components/Landing";
 import LatestProducts from "./components/LatestProducts";
 import Rates from "./components/Rates";
 import TopNav from "./components/TopNav";
-import IconPage from "./IconPage";
 import ProductPage from "./components/ProductPage";
 import Cart from "./components/Cart";
 import CartIcon from "./components/CartIcon";
