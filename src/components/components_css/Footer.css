@@ -1,0 +1,91 @@
+.mapouter{
+    position:relative;
+    text-align:right;
+    height:290px;
+    width:180px;
+}
+.gmap_canvas{
+    overflow:hidden;
+    background:none!important;
+    height:290px;
+    width:180px;
+}
+.nopad{
+    padding-right: 0;
+}
+.footer {
+    background-color: #03001e;
+    color: white;
+    padding: 15px 20px;
+}
+.footer .row
+{
+    width: 100%;    
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    gap: 30px;
+}
+.footer .row img {
+    height: 50px;
+    width: 50px;
+    border-radius: 14px;
+    -webkit-border-radius: 14px;
+    -moz-border-radius: 14px;
+    -ms-border-radius: 14px;
+    -o-border-radius: 14px;
+}
+.footer .row .about
+{
+    padding-right: 30px;
+    width: 100%;
+}
+
+.footer h2,
+.footer .copyright {
+    color: #d86a8d;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+    padding-top: 7px;
+}
+
+.footer a:hover {
+    color: #d86a8d;
+}
+
+.footer .contact ul svg {
+    width: 20px;
+    height: 20px;
+}
+
+.footer svg{
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    padding: 8px;
+    font-size: 16px;
+}
+.footer .facebook {
+    background-color: #1877f2;
+}
+
+.footer .instagram {
+    background-image: linear-gradient(#cd486b, #fbad50, #fccc63, #fccc63);
+    color: white;
+}
+
+.footer .youtube {
+    background-color: red;
+}
+
+
+.footer .car-footer
+{
+    margin-bottom: 10px;
+}

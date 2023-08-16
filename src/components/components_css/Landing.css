@@ -1,0 +1,90 @@
+.landing{
+    background-image: url("../../Images/landing.png");
+    background-repeat: no-repeat;
+    height:calc(100vh - 125px);
+    background-color: #b2b2d7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.landing::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.landing .intro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+.landing .intro h1{
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 12px;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+.landing .intro span{
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 24px;
+    color: white;
+    text-align: center;
+}
+
+.landing .intro a{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.landing .intro a .button-27{
+    appearance: none;
+    background-color: #000000;
+    border: 2px solid #1A1A1A;
+    border-radius: 15px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-size: 16px;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+    min-height: 60px;
+    min-width: 0;
+    outline: none;
+    padding: 16px 24px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 50%;
+    will-change: transform;
+}
+
+.landing .intro a .button-27:disabled {
+    pointer-events: none;
+}
+
+.landing .intro a .button-27:hover {
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+}
+
+.landing .intro a .button-27:active {
+    box-shadow: none;
+    transform: translateY(0);
+}

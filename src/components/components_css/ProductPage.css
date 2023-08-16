@@ -1,0 +1,20 @@
+.content{
+    padding: 50px 0;
+}
+.content .container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(500px,1fr));
+}
+
+@media screen and (max-width:767px) {
+    .content .container{
+        grid-template-columns: repeat(auto-fill,minmax(350px,1fr));
+    }
+}
+
+@media screen and (min-width:767px) and (max-width:1023px) {
+    .content .container{
+        display: grid;
+        grid-template-columns: repeat(auto-fill,minmax(350px,1fr));
+    }
+}

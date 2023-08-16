@@ -1,0 +1,83 @@
+.product{
+    width: 500px;
+}
+
+.carousel .carousel-inner .carousel-item img{
+    max-width: 400px;
+    max-height: 400px;
+    margin: auto;
+}
+.car .carousel-control-prev,
+.car .carousel-control-next{
+    display: none;
+}
+.carousel  .carousel-indicators{
+    position: absolute;
+    right: unset;
+    bottom: unset;
+    left: 0;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+.carousel  .carousel-indicators img{
+    height: 100px;
+    width: 80px;
+}
+
+@media screen and (max-width:767px) {
+    .carousel  .carousel-indicators{
+        position: absolute;
+        right: unset;
+        bottom: -125px;
+        left: 50%;
+        z-index: 2;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding: 0;
+        margin-right: 0;
+        margin-bottom: 0;
+        margin-left: 0;
+        top: unset;
+        transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        -o-transform: translateX(-50%);
+    }
+}
+
+@media screen and (min-width:767px) and (max-width:1023px) {
+    .carousel  .carousel-indicators{
+        position: absolute;
+        right: unset;
+        bottom: -125px;
+        left: 50%;
+        z-index: 2;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding: 0;
+        margin-right: 0;
+        margin-bottom: 0;
+        margin-left: 0;
+        top: unset;
+        transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        -o-transform: translateX(-50%);
+    }
+}
