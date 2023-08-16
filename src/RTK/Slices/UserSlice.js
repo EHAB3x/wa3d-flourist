@@ -1,10 +1,9 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 
 export const  fetchUsers = createAsyncThunk("ProductSlice/fetchUsers",async()=>{
-    const res = await fetch("https://api.jsonbin.io/v3/b/64d37f768e4aa6225ecd3a45");
+    const res = await fetch("https://raw.githubusercontent.com/EHAB3x/DB/main/db.json");
     const data = await res.json();
-    console.log(data.record.users)
-    return data.record.users;
+    return data.users;
 })
 
 const UserSlice = createSlice({
