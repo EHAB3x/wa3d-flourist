@@ -1,7 +1,4 @@
 import { useDispatch, useSelector } from "react-redux";
-import BottomNav from "./BottomNav";
-import Footer from "./Footer";
-import TopNav from "./TopNav";
 import './components_css/Cart.css'
 import { addQuant, clear, deleteFromCart, minusQuant } from "../RTK/Slices/CartSlice";
 
@@ -15,8 +12,6 @@ function Cart(){
     },0)
     return(
         <>
-        <TopNav/>
-        <BottomNav/>
             <div className="cart-content text-center py-3">
                 <div className="container">
                     <p>You Can Find The Flowers You Added To Cart Here</p>
@@ -55,7 +50,6 @@ function Cart(){
                     <button type="button" className="btn btn-primary my-5" onClick={()=>{dispatch(clear())}}>Clear Cart</button>
                 </div>
             </div>
-        <Footer />
         </>
     )
 }

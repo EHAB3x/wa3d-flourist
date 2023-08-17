@@ -1,12 +1,8 @@
 import { useParams } from "react-router-dom";
-import BottomNav from "./BottomNav";
-import Footer from "./Footer";
-import TopNav from "./TopNav";
 import { useEffect, useState } from "react";
 import ProductCarousel from "./ProductCarousel";
 import ProductDetails from "./ProductDetails";
 import './components_css/ProductPage.css'
-import CartIcon from "./CartIcon";
 function ProductPage(){
     window.scrollTo(0,0);
     let params = useParams();
@@ -20,16 +16,12 @@ function ProductPage(){
     // console.log(product)
     return(
         <>
-            <TopNav />
-            <BottomNav />
             <div className="content">
                 <div className="container">
                     <ProductCarousel product ={product}/>
                     <ProductDetails product ={product}/>
                 </div>
             </div>        
-            <CartIcon/>   
-            <Footer />
         </>
     )
 }

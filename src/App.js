@@ -13,17 +13,15 @@ import CartIcon from "./components/CartIcon";
 function App() {
   return (
     <div className="App">
+        <TopNav />
+        <BottomNav />
       <Routes>
         <Route path="/" element={
           <>
-          <TopNav />
-          <BottomNav />
           <Landing />
           <Categories />
           <LatestProducts />
           <Rates />
-          <Footer />
-          <CartIcon />
           </>
         }>           
         </Route>
@@ -32,17 +30,10 @@ function App() {
 
         <Route path="/cart" element={<Cart />}></Route>
 
-        <Route path="/products" element={
-          <>
-          <TopNav />
-          <BottomNav />
-          <LatestProducts />
-          <Footer />
-          <CartIcon />
-          </>
-        }>           
-        </Route>
+        <Route path="/products" element={<LatestProducts />}></Route>
       </Routes>
+      <Footer />
+      <CartIcon />
     </div>
   );
 }
