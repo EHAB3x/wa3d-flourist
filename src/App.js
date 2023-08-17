@@ -13,8 +13,8 @@ import CartIcon from "./components/CartIcon";
 function App() {
   return (
     <div className="App">
-        <TopNav />
-        <BottomNav />
+      <TopNav />
+      <BottomNav />
       <Routes>
         <Route path="/" element={
           <>
