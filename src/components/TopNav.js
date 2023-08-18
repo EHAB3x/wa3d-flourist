@@ -14,10 +14,10 @@ function TopNav(){
             <div className="collapse navbar-collapse" id="navbarNav">
                 <ul className="navbar-nav contact">
                 <li className="nav-item">
-                    <a className="nav-link hvr-underline-from-center" aria-current="page" href="/#">About Us</a>
+                    <Link className="nav-link hvr-underline-from-center" aria-current="page" to="/">About Us</Link>
                 </li>
                 <li className="nav-item">
-                    <a className="nav-link hvr-underline-from-center" href="/#">Contact Us</a>
+                    <Link className="nav-link hvr-underline-from-center" to="/">Contact Us</Link>
                 </li>
                 </ul>  
             </div>
