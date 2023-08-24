@@ -11,7 +11,7 @@ function Rates() {
   const dispatch = useDispatch()
   useEffect(()=>{
     dispatch(fetchUsers())
-  },[])
+  },[dispatch])
 
   return (
     <div className="partner text-center">
