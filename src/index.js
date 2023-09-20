@@ -8,11 +8,11 @@ import { Provider } from 'react-redux';
 import { store } from './RTK/Store';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <Provider store={store}>
-    <HashRouter>
-      <App />
-    </HashRouter>
-  </Provider>
+  <HashRouter>
+      <Provider store={store}>
+        <App />
+    </Provider>
+  </HashRouter>
 );
 
 // If you want to start measuring performance in your app, pass a function
