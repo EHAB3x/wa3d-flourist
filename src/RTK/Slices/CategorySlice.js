@@ -3,7 +3,6 @@ import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 export const  fetchCategories = createAsyncThunk("ProductSlice/fetchCategories",async()=>{
     const res = await fetch("https://raw.githubusercontent.com/EHAB3x/DB/main/db.json");
     const data = await res.json();
-    console.log(data)
     return data.categories;
 })
 

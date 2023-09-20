@@ -6,6 +6,7 @@ import './components_css/ProductPage.css'
 function ProductPage(){
     window.scrollTo(0,0);
     let params = useParams();
+    console.log(params);
     const [product, setProduct] = useState({});
 
     useEffect(()=>{

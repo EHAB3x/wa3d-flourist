@@ -9,6 +9,7 @@ import TopNav from "./components/TopNav";
 import ProductPage from "./components/ProductPage";
 import Cart from "./components/Cart";
 import CartIcon from "./components/CartIcon";
+import Category from "./components/Category";
 
 function App() {
   return (
@@ -31,6 +32,8 @@ function App() {
         <Route path="/cart" element={<Cart />}></Route>
 
         <Route path="/products" element={<LatestProducts />}></Route>
+
+        <Route path="/products/:category" element={<Category/>}></Route>
       </Routes>
       <Footer />
       <CartIcon />
