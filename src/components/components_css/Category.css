@@ -1,0 +1,70 @@
+.category .container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    gap: 30px;
+    padding: 80px 0 40px 0;
+    padding-right: calc(var(--bs-gutter-x) * .5) !important;
+    padding-left: calc(var(--bs-gutter-x) * .5) !important;
+}
+
+.category .container .box{
+    transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    text-decoration: none;
+    overflow: hidden;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    margin-top: 40px;
+    background-image: url("../../Images/image-removebg-preview.png");
+    background-position: bottom;
+    height: 400px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    position: relative;
+    cursor: pointer;
+}
+.category .container .box:hover{
+    transform: translateY(-15px);
+    -webkit-transform: translateY(-15px);
+    -moz-transform: translateY(-15px);
+    -ms-transform: translateY(-15px);
+    -o-transform: translateY(-15px);
+}
+.category .container .box img{
+    width: 100%;
+    height: 300px;
+}
+.category .container .box h3{
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1.5;
+    margin: 10px 0 16px;
+    color: #000000;
+    text-align: center;
+}
+.category .container .box p{
+    font-weight: bold;
+    font-size: 16px;
+    color: #000;
+    display: block;
+    text-align: center;
+    margin: 10px 0;
+}
+.category .container .box span{
+    color: white;
+    position: absolute;
+    background-color: #d86a8d;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    padding: 4px 30px;
+    top: 18px;
+    right: -35px;
+}

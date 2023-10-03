@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
-import { useParams } from "react-router-dom";
-
+import { Link, useParams } from "react-router-dom";
+import './components_css/Category.css'
 
 const Category = () => {
     const params = useParams();
@@ -14,9 +14,17 @@ const Category = () => {
     console.log(product);
   return (
     <div className='category'>
-      {product.map((product)=>(
-          product.category === params.category && <h2>{product.title}</h2>
-      ))}
+      <div className='container'>
+        {product.map((product)=>(
+            product.category === params.category && 
+            <Link className="box" key={product.id} to={`/${product.id}`}>
+                <img src={product.image} alt={product.title} />
+                <h3>{product.title}</h3>
+                <p>{product.price} EGP</p>
+                  <span>Code: FW-{product.id}</span>            
+            </Link>
+        ))}
+      </div>
     </div>
   )
 }
