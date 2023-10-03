@@ -10,9 +10,13 @@ const Category = () => {
         .then(res => res.json())
         .then(data => setProduct(data.products))
     },[])
+    console.log(params.category);
+    console.log(product);
   return (
     <div className='category'>
-      
+      {product.map((product)=>(
+          product.category === params.category && <h2>{product.title}</h2>
+      ))}
     </div>
   )
 }
