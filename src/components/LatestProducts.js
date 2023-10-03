@@ -15,7 +15,7 @@ function LatestProducts() {
 
   useEffect(()=>{
     dispatch(fetchProducts())
-  },[])
+  },[dispatch])
   
 
   return (
